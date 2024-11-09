@@ -3,7 +3,7 @@ from typing import List
 
 HYPEN_E_DOT='-e.'
 
-def get_requirement(file_path:str)->List[str]:
+'''def get_requirement(file_path:str)->List[str]:
 	requirements = []
 	with open(file_path) as f:
 		requirements = f.readlines()
@@ -11,7 +11,7 @@ def get_requirement(file_path:str)->List[str]:
 		
 		if HYPEN_E_DOT in requirements:
 			requirements.remove(HYPEN_E_DOT)
-	return requirements
+	return requirements'''
 
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
@@ -19,7 +19,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 __version__ = "0.0.4"
 REPO_NAME = "Customize-MongoDB-Connector-PYPI-Pkg"
-PKG_NAME= "databaseautomation"
+PKG_NAME= "mongodb_connect"
 AUTHOR_USER_NAME = "JoeJoyal"
 AUTHOR_EMAIL = "joewilsonthamiyan@gmail.com"
 
